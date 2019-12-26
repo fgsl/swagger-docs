@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/**
+ * Swagger Docs
+ * @author Flávio Gomes da Silva Lisboa <flavio.lisboa@fgsl.eti.br>
+ * @license https://www.gnu.org/licenses/lgpl-3.0.en.html
+ */ 
+ -->
+<project name="pkc" default="dist">
+
+	<!-- ============================================ -->
+	<!-- Target: prepare -->
+	<!-- ============================================ -->
+	<target name="prepare">
+		<echo msg="Making directory ./bin" />
+		<mkdir dir="./bin" />
+	</target>
+
+	<!-- ============================================ -->
+	<!-- (DEFAULT) Target: dist -->
+	<!-- ============================================ -->
+	<target name="dist" depends="prepare">	
+		<exec command="cp fsd.php bin/fsd" passthru="true" />
+		<chmod file="./bin/fsd" mode="0755" />
+		<exec command="rm -rf ./tmp.*" passthru="true" />
+		<echo msg="Created executable PHP file" />
+	</target>
+</project>

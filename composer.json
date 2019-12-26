@@ -1,0 +1,25 @@
+{
+	"name" : "fgsl/swagger-docs",
+	"description" : "Swagger Documentation Generator",
+	"type" : "component",
+	"keywords" : [
+		"documentation",
+		"generator",
+		"swagger"
+	],
+	"homepage" : "https://github.com/fgsl/swagger-docs",
+	"license" : "AGPL-3.0-only",
+	"require" : {
+		"php" : ">=7.2",
+		"zircote/swagger-php" : "^3.0"
+	},
+	"require-dev" : {
+		"phing/phing" : "^2.16"
+	},
+	"config" : {
+		"secure-http" : false
+	},
+	"bin" : [
+		"bin/fsd"
+	]
+}
