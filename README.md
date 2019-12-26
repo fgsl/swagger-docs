@@ -1,4 +1,4 @@
-#Installation in a PHP project
+# Installation in a PHP project
 
 Run command:
 
@@ -14,7 +14,7 @@ See sample below:
 vendor/bin/fsd
 ```
 
-#Build
+# Build
 
 ```bash
 vendor/bin/phing
