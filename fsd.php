@@ -20,7 +20,7 @@ $currentDir = getcwd();
 chdir($currentDir);
 
 @unlink($currentDir . '/swagger.json');
-shell_exec('composer run docs');
+shell_exec('vendor/bin/openapi src/ -o swagger.json');
 if (!file_exists($currentDir . '/swagger.json')){
     echo "\nFile swagger.json was not created. It is not possible to generate API documentation.\n";
     exit;
