@@ -8,19 +8,23 @@
 echo "\n" . str_repeat('=',78);
 echo "\n" . str_pad(' FGSL SWAGGER DOCUMENTATION GENERATOR ',78,'=',STR_PAD_BOTH);
 echo "\n" . str_repeat('=',78);
-echo "\nFor an alternative target directory, pass the directory name as argument."; 
-echo "\nSo: vendor/bin/fsd [targetDirectory]";
-echo "\n[targetDirectory] is relative to root directory of application.";
+echo "\nDefaults: source directory: src/ target directory: public/.";
+echo "\nFor an alternative source directory, pass the directory name as first argument.";
+echo "\nFor an alternative target directory, pass the directory name as second argument."; 
+echo "\nSo: vendor/bin/fsd [sourceDirectory] [targetDirectory]";
+echo "\n[sourceDirectory] and [targetDirectory] are relative to root directory of application.";
 echo "\n" . str_repeat('=',78);
 
-$targetDir = (isset($argv[1]) ? $argv[1] : 'public');
+$sourceDir = (isset($argv[1]) ? $argv[1] : 'src');
+
+$targetDir = (isset($argv[2]) ? $argv[2] : 'public');
 
 $currentDir = getcwd();
 
 chdir($currentDir);
 
 @unlink($currentDir . '/swagger.json');
-shell_exec('vendor/bin/openapi src/ -o swagger.json');
+shell_exec('vendor/bin/openapi ' . $sourceDir . '/ -o swagger.json');
 if (!file_exists($currentDir . '/swagger.json')){
     echo "\nFile swagger.json was not created. It is not possible to generate API documentation.\n";
     exit;
