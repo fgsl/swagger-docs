@@ -24,4 +24,4 @@ vendor/bin/phing
 
 Read about annotations in:
 
-https://github.com/zircote/swagger-php/blob/master/docs/Getting-started.md
+https://zircote.github.io/swagger-php
