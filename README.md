@@ -14,6 +14,20 @@ See sample below:
 vendor/bin/fsd
 ```
 
+Defaults: **source directory:** src/ **target directory:** public/.
+
+For an alternative source directory, pass the directory name as first argument.
+
+For an alternative target directory, pass the directory name as second argument.
+
+So: 
+
+```bash
+vendor/bin/fsd [sourceDirectory] [targetDirectory]
+```
+
+[sourceDirectory] and [targetDirectory] are relative to root directory of application.
+
 # Build
 
 ```bash
