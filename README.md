@@ -33,12 +33,13 @@ vendor/bin/fsd [sourceDirectory] [targetDirectory]
 ```bash
 vendor/bin/phing
 ```
+# Dependency
+
+This project depends on [swagger-php](https://zircote.github.io/swagger-php).
 
 # Annotations
 
-Read about annotations in:
-
-https://zircote.github.io/swagger-php
+Read about annotations in [swagger-php annotations](https://zircote.github.io/swagger-php/reference/annotations.html).
 
 # Model for API page
 
