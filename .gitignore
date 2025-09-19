@@ -1,5 +1,8 @@
-.phpunit.result.cache
+..phpunit.result.cache
 .buildpath
 .project
 .settings/
 vendor/
+swagger.json
+openapi.yaml
+.phpunit.cache/
