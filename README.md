@@ -37,11 +37,13 @@ vendor/bin/phing
 
 This project depends on [swagger-php](https://zircote.github.io/swagger-php).
 
-# Annotations
+# Attributes
 
-Read about annotations in [swagger-php annotations](https://zircote.github.io/swagger-php/reference/annotations.html).
+Use attributes for generating SWagger documentation.
 
-But maybe you can learn better by [examples](https://github.com/zircote/swagger-php/tree/master/Examples).
+Read about attributes in [swagger-php attributes](https://zircote.github.io/swagger-php/guide/attributes.html) topic.
+
+But maybe you can learn better by [examples](https://zircote.github.io/swagger-php/guide/examples.html).
 
 # Model for API page
 
