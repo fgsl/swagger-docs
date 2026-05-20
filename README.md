@@ -59,8 +59,8 @@ For example, for a Laminas/Mezzio PHP application, [WEB ROOT ROUTE] is `<?=$this
     <meta charset="UTF-8">
     <title>Swagger UI</title>
     <link rel="stylesheet" type="text/css" href="[WEB ROOT ROUTE]swagger-ui.css" >
-    <link rel="icon" type="image/png" href="[WEB ROOT ROUTE]>favicon-32x32.png" sizes="32x32" />
-    <link rel="icon" type="image/png" href="[WEB ROOT ROUTE]>favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="[WEB ROOT ROUTE]favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="[WEB ROOT ROUTE]favicon-16x16.png" sizes="16x16" />
     <style>
       html
       {
